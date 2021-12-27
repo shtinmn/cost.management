@@ -1,6 +1,9 @@
 import logo from './logo.svg'
 
 import { useState } from 'react'
+
+import { Button } from 'rsuite'
+
 import './App.css'
 
 function App() {
@@ -15,6 +18,7 @@ function App() {
           <button type="button" onClick={() => setCount(count => count + 1)}>
             count is: {count}
           </button>
+          <Button>123</Button>
         </p>
         <p>
           Edit <code>App.tsx</code> and save to test HMR updates.
