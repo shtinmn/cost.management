@@ -998,6 +998,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rsuite/charts@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@rsuite/charts@npm:4.0.0"
+  dependencies:
+    echarts-for-react: ^2.0.15-beta.0
+    lodash.merge: ^4.6.2
+    react-keyed-flatten-children: ^1.2.0
+  peerDependencies:
+    echarts: ^3.0.0 || ^4.0.0
+    react: ^16.8.0
+  checksum: 6d50805ea1e11c3e3f503f558b25087453afd9baa35f7a144eb3d35fe98c6a275b4714db60776a6346de94fed4c00605f77b0892c554a1f4170fe77278aed146
+  languageName: node
+  linkType: hard
+
 "@rsuite/icon-font@npm:^4.0.0":
   version: 4.0.0
   resolution: "@rsuite/icon-font@npm:4.0.0"
@@ -2211,11 +2225,13 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.0.0
     "@commitlint/config-conventional": ^16.0.0
+    "@rsuite/charts": ^4.0.0
     "@types/react": ^17.0.33
     "@types/react-dom": ^17.0.10
     "@typescript-eslint/eslint-plugin": ^5.8.0
     "@typescript-eslint/parser": ^5.8.0
     "@vitejs/plugin-react": ^1.0.7
+    echarts: ^5.2.2
     eslint: ^8.5.0
     eslint-import-resolver-alias: ^1.1.2
     eslint-plugin-import: ^2.25.3
@@ -2494,6 +2510,30 @@ __metadata:
   dependencies:
     is-obj: ^2.0.0
   checksum: d5775790093c234ef4bfd5fbe40884ff7e6c87573e5339432870616331189f7f5d86575c5b5af2dcf0f61172990f4f734d07844b1f23482fff09e3c4bead05ea
+  languageName: node
+  linkType: hard
+
+"echarts-for-react@npm:^2.0.15-beta.0":
+  version: 2.0.16
+  resolution: "echarts-for-react@npm:2.0.16"
+  dependencies:
+    fast-deep-equal: ^2.0.1
+    size-sensor: ^1.0.0
+  peerDependencies:
+    echarts: ^3.0.0 || ^4.0.0
+    prop-types: ^15.5.7
+    react: ">=0.13.2 || ^0.14 || ^15.0.0 || >=16.0.0"
+  checksum: cfbeace5e89ba3af1f569977b670f59917cef6e5048de7b9a4453b1fed57c48a6621254b94401b17645c7a037c43e685a3a4683bb90aa655bcdba392dd4c5ebc
+  languageName: node
+  linkType: hard
+
+"echarts@npm:^5.2.2":
+  version: 5.2.2
+  resolution: "echarts@npm:5.2.2"
+  dependencies:
+    tslib: 2.3.0
+    zrender: 5.2.1
+  checksum: ab08a52895ce8e49acccb81673f78400aa5c5a4ae7c0b0bdaeae22036e6e34f94da9d43166718e3b1e1fb1e29e02f419702e21b8b84371747201e7ab01744fca
   languageName: node
   linkType: hard
 
@@ -3116,6 +3156,13 @@ __metadata:
     jest-message-util: ^27.4.2
     jest-regex-util: ^27.4.0
   checksum: 5eba0f348fd234420d7b4f09968d30d0b19e9e73579ad060e5e635be879671dfb9bed472befe1d5fe8749b6beefc08beba0e034d5aad2aca11e4d5ac43873326
+  languageName: node
+  linkType: hard
+
+"fast-deep-equal@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "fast-deep-equal@npm:2.0.1"
+  checksum: b701835a87985e0ec4925bdf1f0c1e7eb56309b5d12d534d5b4b69d95a54d65bb16861c081781ead55f73f12d6c60ba668713391ee7fbf6b0567026f579b7b0b
   languageName: node
   linkType: hard
 
@@ -5791,7 +5838,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.1":
+"react-is@npm:^16.13.1, react-is@npm:^16.8.6":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
@@ -5802,6 +5849,17 @@ __metadata:
   version: 17.0.2
   resolution: "react-is@npm:17.0.2"
   checksum: 9d6d111d8990dc98bc5402c1266a808b0459b5d54830bbea24c12d908b536df7883f268a7868cfaedde3dd9d4e0d574db456f84d2e6df9c4526f99bb4b5344d8
+  languageName: node
+  linkType: hard
+
+"react-keyed-flatten-children@npm:^1.2.0":
+  version: 1.3.0
+  resolution: "react-keyed-flatten-children@npm:1.3.0"
+  dependencies:
+    react-is: ^16.8.6
+  peerDependencies:
+    react: ">=15.0.0"
+  checksum: 3bb042bb7cd48909491a5f92b8e7b2fb0417d69ad24bf04dbe1ed7a308cc7dfe6e3c9b5550e7b9016ee6bef61829b92e7f3a355ed1b867affd251bd518bcdd90
   languageName: node
   linkType: hard
 
@@ -6249,6 +6307,13 @@ __metadata:
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
   checksum: aba6438f46d2bfcef94cf112c835ab395172c75f67453fe05c340c770d3c402363018ae1ab4172a1026a90c47eaccf3af7b6ff6fa749a680c2929bd7fa2b37a4
+  languageName: node
+  linkType: hard
+
+"size-sensor@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "size-sensor@npm:1.0.1"
+  checksum: 8af239ea1acac3f9e1fe1b6cc0436b7cd2105c0eee56cebfdc71ec1b6ec9fcb3065bd4214c59aa6615b58f778ac4732056a8d1e909506dacaef476220f27bec3
   languageName: node
   linkType: hard
 
@@ -6785,6 +6850,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:2.3.0":
+  version: 2.3.0
+  resolution: "tslib@npm:2.3.0"
+  checksum: 8869694c26e4a7b56d449662fd54a4f9ba872c889d991202c74462bd99f10e61d5bd63199566c4284c0f742277736292a969642cc7b590f98727a7cae9529122
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.8.1":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
@@ -7277,5 +7349,14 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: f77b3d8d00310def622123df93d4ee654fc6a0096182af8bd60679ddcdfb3474c56c6c7190817c84a2785648cdee9d721c0154eb45698c62176c322fb46fc700
+  languageName: node
+  linkType: hard
+
+"zrender@npm:5.2.1":
+  version: 5.2.1
+  resolution: "zrender@npm:5.2.1"
+  dependencies:
+    tslib: 2.3.0
+  checksum: 4252ca7bd638d23cfef115b9d6a42c6eb893af3e37f25416afc65214139298817d2d3221022b3b2359d36fe7dacc887c8d21cbea454e3d6105f8263d579919e1
   languageName: node
   linkType: hard
