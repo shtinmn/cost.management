@@ -1,5 +1,6 @@
-import { useState } from 'react'
 import logo from './logo.svg'
+
+import { useState } from 'react'
 import './App.css'
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
+          <button type="button" onClick={() => setCount(count => count + 1)}>
             count is: {count}
           </button>
         </p>
@@ -19,12 +20,7 @@ function App() {
           Edit <code>App.tsx</code> and save to test HMR updates.
         </p>
         <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
             Learn React
           </a>
           {' | '}
