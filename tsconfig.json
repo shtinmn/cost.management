@@ -35,7 +35,6 @@
         "src/*"
       ]
     },
-
     /* Strict Type-Checking Options */
     "noImplicitAny": true,
     "strictNullChecks": false,
@@ -53,12 +52,13 @@
     /* Experimental Options */
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "downlevelIteration": true,
+    "downlevelIteration": true
     /* Advanced Options */
   },
   "include": [
     "./**/*.ts",
-    "src/**/*.tsx"
+    "src/**/*.tsx",
+    "./**/*.d.ts"
   ],
   "exclude": [
     "node_modules",
